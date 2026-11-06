@@ -1,0 +1,11 @@
+{
+  "org": "apache",
+  "repo": "datafusion-python",
+  "versions": [
+    {
+      "commit": "878e5d3b8d373bca19671af43e49dfb1890f8da2",
+      "tag": "",
+      "parsed_at": "2026-11-06T06:34:38.841799+00:00"
+    }
+  ]
+}
