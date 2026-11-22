@@ -1,0 +1,50 @@
+[2026-11-22T03:25:10Z] === ENRICH ITERATION 1 START | repo=apache/datafusion-python sha=aa88d654 ===
+[2026-11-22T03:25:10Z] [iter=1] PHASE START: enrich repo=apache/datafusion-python sha=aa88d654 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/aa88d654-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/aa88d6540ca0b037347b959788ea32700509b98a.nq.gz
+[2026-11-22T03:25:34Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-11-22T03:25:52Z] [iter=1] AST store loaded triples=1642808 load_secs=18 mem_mb=917 MB
+[2026-11-22T03:25:52Z] [iter=1] Step 2: Finding LSP targets mem_mb=917 MB
+[2026-11-22T03:25:55Z] [iter=1] LSP targets found call_sites=16124 imports=1020 extends=42 implements=1 secs=3
+[2026-11-22T03:25:57Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=917 MB
+[2026-11-22T03:26:04Z] [iter=1] Position index built positions=107667 nodes_with_types=140833 secs=7 mem_mb=917 MB
+[2026-11-22T03:26:04Z] [iter=1] Step 3: Starting LSP resolution mem_mb=917 MB already_completed_types=[] already_completed_files=0
+[2026-11-22T03:26:04Z] [iter=1] Resolving target type target_type=call_site count=16124
+[2026-11-22T03:26:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.9 files_done=0 resolved=0 errors=0 current=examples/tpch/_tests.py
+[2026-11-22T03:31:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.6 files_done=2 resolved=732 errors=0 current=python/tests/test_functions.py
+[2026-11-22T03:38:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.0 files_done=3 resolved=1527 errors=0 current=python/datafusion/expr.py
+[2026-11-22T03:39:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.5 files_done=4 resolved=1731 errors=0 current=dev/release/generate-changelog.py
+[2026-11-22T03:40:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.5 files_done=6 resolved=1921 errors=0 current=benchmarks/db-benchmark/groupby-datafusion.py
+[2026-11-22T03:41:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=16.4 files_done=8 resolved=2116 errors=0 current=python/tests/test_expr.py
+[2026-11-22T03:45:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=20.0 files_done=9 resolved=2564 errors=0 current=python/tests/test_aggregation.py
+[2026-11-22T03:47:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=22.6 files_done=10 resolved=2868 errors=0 current=python/datafusion/dataframe.py
+[2026-11-22T03:48:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=23.2 files_done=11 resolved=2985 errors=0 current=benchmarks/db-benchmark/join-datafusion.py
+[2026-11-22T03:48:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=23.7 files_done=17 resolved=3180 errors=0 current=python/tests/test_udwf.py
+[2026-11-22T03:49:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=24.7 files_done=18 resolved=3300 errors=0 current=examples/datafusion-ffi-example/python/tests/_test_scalar_udf.py
+[2026-11-22T03:50:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=25.4 files_done=23 resolved=3384 errors=0 current=examples/tpch/q21_suppliers_kept_orders_waiting.py
+[2026-11-22T03:53:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=28.0 files_done=26 resolved=3676 errors=0 current=examples/datafusion-ffi-example/python/tests/_test_table_function.py
+[2026-11-22T03:53:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=28.5 files_done=29 resolved=3788 errors=0 current=python/tests/test_wrapper_coverage.py
+[2026-11-22T03:54:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=29.0 files_done=34 resolved=3886 errors=0 current=examples/tpch/q16_part_supplier_relationship.py
+[2026-11-22T03:54:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=29.6 files_done=39 resolved=3981 errors=0 current=python/tests/test_udtf.py
+[2026-11-22T03:55:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=30.6 files_done=43 resolved=4103 errors=0 current=examples/tpch/q19_discounted_revenue.py
+[2026-11-22T03:56:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=31.3 files_done=60 resolved=4278 errors=0 current=examples/sql-using-python-udf.py
+[2026-11-22T03:57:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=31.8 files_done=76 resolved=4361 errors=0 current=python/datafusion/col.py
+[2026-11-22T03:58:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=33.0 files_done=101 resolved=4475 errors=0 current=src/functions.rs
+[2026-11-22T04:00:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=35.4 files_done=102 resolved=5014 errors=0 current=examples/datafusion-ffi-example/src/catalog_provider.rs
+[2026-11-22T04:01:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=36.2 files_done=106 resolved=5498 errors=0 current=src/expr/create_memory_table.rs
+[2026-11-22T04:02:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=36.9 files_done=109 resolved=5928 errors=0 current=src/expr/bool_expr.rs
+[2026-11-22T04:02:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=37.4 files_done=115 resolved=6506 errors=0 current=src/dataframe.rs
+[2026-11-22T04:03:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=38.2 files_done=116 resolved=6918 errors=0 current=src/utils.rs
+[2026-11-22T04:04:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=39.2 files_done=119 resolved=7128 errors=0 current=src/expr/drop_catalog_schema.rs
+[2026-11-22T04:04:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=39.7 files_done=137 resolved=7692 errors=0 current=src/dataset.rs
+[2026-11-22T04:05:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=40.2 files_done=170 resolved=8335 errors=0 current=src/expr/analyze.rs
+[2026-11-22T04:05:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=40.7 files_done=213 resolved=8675 errors=0 current=dev/build-set-env.sh
+[2026-11-22T04:05:53Z] [iter=1] Target type resolved target_type=call_site resolved=8675 errors=0 secs=2389 mem_mb=917 MB
+[2026-11-22T04:05:53Z] [iter=1] Resolving target type target_type=import_statement count=1020
+[2026-11-22T04:06:25Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=41.3 files_done=103 resolved=283 errors=0 current=src/expr/drop_view.rs
+[2026-11-22T04:06:28Z] [iter=1] Target type resolved target_type=import_statement resolved=832 errors=0 secs=35 mem_mb=917 MB
+[2026-11-22T04:06:28Z] [iter=1] Resolving target type target_type=extends_clause count=42
+[2026-11-22T04:06:29Z] [iter=1] Target type resolved target_type=extends_clause resolved=35 errors=0 secs=1 mem_mb=917 MB
+[2026-11-22T04:06:29Z] [iter=1] Resolving target type target_type=implements_clause count=1
+[2026-11-22T04:06:58Z] [iter=1] Target type resolved target_type=implements_clause resolved=1 errors=0 secs=30 mem_mb=917 MB
+[2026-11-22T04:39:58Z] [iter=1] Step 5: Writing final enrichment file triples=135448
+[2026-11-22T04:40:00Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/aa88d6540ca0b037347b959788ea32700509b98a.nq.gz size_kb=3286
+[2026-11-22T04:40:00Z] [iter=1] PHASE END: enrich elapsed_s=4490 elapsed_min=74.8 total_triples=135448
